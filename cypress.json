@@ -1,11 +1,1 @@
-{
-  "projectId": "6ndde9",
-  "baseUrl": "https://ccstore-stage-zb5a.oracleoutsourcing.com/",
-  "integrationFolder":"../GHomologation/cypress/integration",
-  "ignoreTestFiles":"../GHomologation/cypress/integration/Pages/*.js",
-  "pageLoadTimeout":30000,
-  "env": {
-    "pfUser": "automatedTestPF@mailinator.com",
-    "password": "Admin123"
-  }
-}
+{}
