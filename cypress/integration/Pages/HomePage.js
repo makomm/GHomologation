@@ -23,6 +23,14 @@ class HomePage {
     return login;
   }
 
+  goToUserRegistration() {
+    const registrationlink = this.header.getSignInLink();
+    registrationlink.click();
+
+    const registration = new CadastroPage();
+    return registration;
+  }
+
   goToCart() {
     const cartlink = this.header.getCartLink();
     cartlink.click({ force: true });
@@ -67,6 +75,8 @@ class HomePage {
   goToPDP(item) {
     this.getCarrouselItem(item).find('[role="link"]').children().first().click();
   }
+
+  
 }
 
 export default HomePage;
