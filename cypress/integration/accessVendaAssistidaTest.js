@@ -14,7 +14,7 @@ describe('Access Venda Assistida selecting a client from the wallet', () => {
     sessionStorage.clear();
   });
 
-  it('should access Venda Assistida selecting a PJ client from the wallet', () => {
+  it.skip('should access Venda Assistida selecting a PJ client from the wallet', () => {
     const home = new HomePage();
     home.visit();
     
@@ -37,7 +37,7 @@ describe('Access Venda Assistida selecting a client from the wallet', () => {
     home.getVendaAssistidaButton().should('be.visible');
   });
 
-  it('should access Venda Assistida selecting a PF client from the wallet', () => {
+  it.skip('should access Venda Assistida selecting a PF client from the wallet', () => {
     const home = new HomePage();
     home.visit();
     

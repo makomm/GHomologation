@@ -4,7 +4,7 @@ describe('Gimba Enviar Pedido PF Test', () => {
   const email = Cypress.env('pfUser');
   const password = Cypress.env('password');
   //id do produto 10721770
-  it('should send an Order using Cartao', () => {
+  it.skip('should send an Order using Cartao', () => {
     const home = new HomePage();
     home.visit();
     

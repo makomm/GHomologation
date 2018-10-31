@@ -4,7 +4,7 @@ describe('Gimba Login Test Page Object', () => {
   const email = Cypress.env('pfUser');
   const password = Cypress.env('password');
 
-  it('should not sign in without email', () => {
+  it.skip('should not sign in without email', () => {
     const home = new HomePage();
     home.visit();
     
