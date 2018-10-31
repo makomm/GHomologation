@@ -5,7 +5,7 @@ describe('Gimba Criar Orcamento Test - Not finished', () => {
   const email = Cypress.env('pfUser');
   const password = Cypress.env('password');
 
-  it('should send an Orcamento', () => {
+  it.skip('should send an Orcamento', () => {
     const home = new HomePage();
     home.visit();
     
