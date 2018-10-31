@@ -17,10 +17,14 @@ class HomePage {
 
   goToSignIn() {
     const loginlink = this.header.getSignInLink();
-    loginlink.click();
+    loginlink.click({force:true});
 
     const login = new LoginPage();
     return login;
+  }
+
+  getVendaAssistidaButton(){
+    return cy.get('.vendor-user-button', { timeout: 150000 });
   }
 
   goToCart() {
@@ -61,11 +65,11 @@ class HomePage {
   }
 
   itemAdd(item) {
-    this.getCarrouselItem(item).find('button').eq(1).click();
+    this.getCarrouselItem(item).find('button').eq(1).click({force:true});
   }
 
   goToPDP(item) {
-    this.getCarrouselItem(item).find('[role="link"]').children().first().click();
+    this.getCarrouselItem(item).find('[role="link"]').children().first().click({force:true});
   }
 }
 

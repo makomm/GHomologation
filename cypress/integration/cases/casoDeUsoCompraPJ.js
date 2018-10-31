@@ -2,12 +2,22 @@ import HomePage from '../Pages/HomePage.js';
 import ProdutoPage from '../Pages/ProdutoPage.js';
 import Header from '../Pages/Header.js';
 import LoginPage from '../Pages/LoginPage.js';
-import CheckoutB2CPage from '../Pages/CheckoutB2CPage.js'
+import CheckoutB2CPage from '../Pages/CheckoutB2BPage.js';
+import Utils from '../utils/utils.js';
 
 describe('Gimba Compra PF Test', () => {
   const email = Cypress.env('pjUser');
   const password = Cypress.env('password');
   const prodStock = Cypress.env('prodInStock');
+  const utils = new Utils;
+
+  beforeEach(function () {
+      utils.emptyCartPJ();
+  });
+
+  afterEach(function () {
+      utils.logOut();
+  });
   it('should send an Order using products from site navigation', () => {
     const home = new HomePage();
     home.visit();
@@ -27,9 +37,9 @@ describe('Gimba Compra PF Test', () => {
     /*ADD Search Bar */
     const header = new Header();
     const search = header.getSearchBar();
-    search.type('garrafa');
+    search.type(prodStock);
     cy.wait(10000);
-    header.addEnabledItem(2);
+    header.addEnabledItem(0);
     cy.wait(5000);
 
     /*Go to Cart*/
