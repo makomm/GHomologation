@@ -23,16 +23,16 @@ describe('Gimba Compra PF Test', () => {
     home.visit();
 
     /*ADD HOME*/
-    home.itemChangeQuantidade(0, '8');
-    home.itemAdd(0);
+    // home.itemChangeQuantidade(0, '8');
+    // home.itemAdd(0);
 
 
     /*ADD PDP */
-    home.goToPDP(1);
-    const pdp = new ProdutoPage();
-    pdp.changeQuantidade('2');
-    cy.wait(5000);
-    pdp.hitComprar();
+    // home.goToPDP(1);
+    // const pdp = new ProdutoPage();
+    // pdp.changeQuantidade('2');
+    // cy.wait(5000);
+    // pdp.hitComprar();
 
     /*ADD Search Bar */
     const header = new Header();
