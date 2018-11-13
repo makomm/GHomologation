@@ -1,6 +1,7 @@
 import Header from './Header.js';
 import LoginPage from './LoginPage.js';
 import CartPage from './CartPage.js';
+import CadastroPage from './CadastroPage';
 
 class HomePage {
   constructor() {
@@ -21,6 +22,14 @@ class HomePage {
 
     const login = new LoginPage();
     return login;
+  }
+
+  goToSignUp() {
+    const signuplink = this.header.getSignUpLink();
+    signuplink.click();
+
+    const signup = new CadastroPage();
+    return signup;
   }
 
   getVendaAssistidaButton(){

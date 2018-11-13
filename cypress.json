@@ -7,6 +7,13 @@
   "env": {
     "pfUser": "automatedTestPF@mailinator.com",
     "pjUser": "automatedTestPJ@mailinator.com",
+    "name": "Joao da Silva",
+    "cellphone": "48359658326",
+    "birthdate": "12121980",
+    "invalidBirthdate": "11111500",
+    "gender": "m",
+    "cep": "45055812",
+    "addressNumber": "936",
     "vendor": "rerocha@gimba.com.br",
     "vendorPassword": "rcr1202",
     "administrator": "jusouza@gimba.com.br",
