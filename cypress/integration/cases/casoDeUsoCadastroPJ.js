@@ -265,5 +265,4 @@ describe('Gimba User Registration Test Page Object', () => {
 
       home.getLogoutButton().should('be.visible');
   });
-
 });
